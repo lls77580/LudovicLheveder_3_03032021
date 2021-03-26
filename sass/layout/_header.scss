@@ -1,0 +1,16 @@
+.header{
+    &_logo{
+        font-family: 'Shrikhand',cursive;
+        width: 15%;
+        height: auto;
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        color: $primarycolor;
+        @media screen and (max-width: 480px){
+            width: 50%;
+            height: auto;
+        }
+    }
+}

@@ -1,0 +1,105 @@
+*{
+margin: auto;
+width: auto;
+}
+/**Section recherche 1ère partie**/
+.city{
+background: $quaternarycolor;
+padding-bottom: 20px;
+}
+.city_search{
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    background-color: $quinarycolor;
+    &_input{
+    width: 15vw;
+    height: 45px;
+    margin-right: 60vw;
+    background-color: $quinarycolor;
+    height: 15px;
+    border: none;
+    @media screen and (max-width:480px ) {
+        width: 40vw;
+        height: 25px;
+        border: none;
+        margin-right: 10vw;
+    }
+    }
+    &_marker{
+    padding-left: 45vw;
+    margin-left: 50vw;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    }
+    &_presentation--title{
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: $quaternarycolor;
+    }
+}
+
+.citysearch_marker--fontawesome{
+margin-left: 35vw;
+}
+
+.secondaire{
+display: flex;
+justify-content: center;
+align-content: center;
+text-align: center;
+padding: 2vw;
+background-color: $quaternarycolor;
+margin-bottom: 25px;
+}
+
+/**seconde partie filtres de recherches**/
+
+.filterrestaurant{
+display: flex;
+flex-direction: column;
+align-content: center;
+justify-content: center;
+width: 90vw;
+@media screen and (max-width: 480px) {
+margin: auto; 
+}
+}
+.restaurant{
+display: flex;
+align-content: flex-start;
+justify-content: center;
+box-shadow: $quinarycolor;
+width: 90vw;
+margin-bottom: 15px;
+height: 50px;
+border-radius: 25px;
+box-shadow: 2px 2px 2px darken($quaternarycolor, 30%)
+}
+.restaurant_mif{
+display: flex;
+align-content: center;
+justify-content: flex-start;
+}
+
+.number{
+width: 2vw;
+padding: 2vw;
+height: 2vw;
+margin-right: 5vw;
+border-radius: 100px;
+background-color: $secondarycolor;
+display: flex;
+justify-content: flex-start;
+align-content: flex-start;
+text-align: flex;
+}
+
+.awesome_restaurant{
+color: $senarycolor;
+}
+
+

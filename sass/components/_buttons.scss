@@ -1,0 +1,23 @@
+.city_search_btn--search{
+display: flex;
+align-content: center;
+justify-content: center;
+background: rgb(147,86,220);
+background: linear-gradient(0deg, rgba(147,86,220,1) 20%, rgba(255,121,218,1) 62%); 
+height: 50px;
+border-radius: 45px;
+color: white;
+width: 58%;
+box-shadow: 2px 2px 2px darken($quinarycolor, 10%);
+font-weight: bolder;
+}
+.btn_restaurant{
+width: 85vw;
+height: max-content;
+font-weight: bolder;
+box-shadow: darken($quinarycolor, 25%);
+background-color: white;
+border: darkgreen;
+margin-right: 5vw;
+}
+
