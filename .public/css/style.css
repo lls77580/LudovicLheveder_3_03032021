@@ -219,7 +219,6 @@ a {
 }
 
 .awesome_restaurant {
-  color: #353535;
   padding: 0 2vw 0 1vw;
 }
 
@@ -315,9 +314,19 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  size: inherit;
-  height: 35px;
   width: auto;
+  height: 45px;
+  color: black;
+}
+.selectionrestaurants_choix--favoris--bis {
+  color: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+}
+.selectionrestaurants_choix--favoris:hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .restaurant {
@@ -376,7 +385,7 @@ a {
   text-decoration: none;
 }
 
-.city_search_btn--search, .validation_btn {
+.city_search_btn--search {
   display: flex;
   align-content: center;
   justify-content: center;
@@ -390,7 +399,7 @@ a {
   margin: auto;
 }
 @media screen and (max-width: 700px) {
-  .city_search_btn--search, .validation_btn {
+  .city_search_btn--search {
     max-width: 280px;
     font-size: 0.7rem;
     display: flex;

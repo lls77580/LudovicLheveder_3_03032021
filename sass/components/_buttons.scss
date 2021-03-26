@@ -2,22 +2,66 @@
 display: flex;
 align-content: center;
 justify-content: center;
-background: rgb(147,86,220);
-background: linear-gradient(0deg, rgba(147,86,220,1) 20%, rgba(255,121,218,1) 62%); 
+background-image: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
 height: 50px;
-border-radius: 45px;
+border-radius: 20px;
 color: white;
-width: 58%;
+width: 218px;
 box-shadow: 2px 2px 2px darken($quinarycolor, 10%);
-font-weight: bolder;
+font-weight:700;
+margin: auto;
+@media screen and (max-width: 700px) {
+max-width: 280px; 
+font-size: 0.7rem;
+display: flex;
+text-align: center;
+justify-content: center;
+align-content: center;
+border: none;
+margin: auto;
+}
 }
 .btn_restaurant{
-width: 85vw;
-height: max-content;
+display: flex;
+width: max-content;
+text-overflow: clip;
+height: 50px;
 font-weight: bolder;
-box-shadow: darken($quinarycolor, 25%);
-background-color: white;
-border: darkgreen;
-margin-right: 5vw;
+border: none;
+font-size: 0.7em;
+background-color: $quaternarycolor;
+overflow: hidden;
+border-radius: 20px;
+justify-items: center;
+align-items: center;
+margin:auto;
+@media screen and (max-width: 700px) {
+width: 85vw;
+padding-right: 4vw;
+font-size: 1em;
+display: flex;
+justify-content: space-around;
+
+&:hover {
+    border-radius: 20px;
+      &::after {
+        border-radius: 20px;
+          opacity: 1;
+      }
+  }
+}
+&::after {
+    border-radius: 20px;
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: lighten($primarycolor, 30%) 0%;
+      opacity: 0;
+      z-index: -1;
+      transition: opacity 250ms;
+  }
 }
 
