@@ -1,0 +1,62 @@
+.mef {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    margin: 30px;
+    height: 60px;
+    width: 18vw;
+
+  }
+
+  .mef:hover > .content {
+    width: 50%;
+    padding-left: 15px;
+  }
+
+  .mef:hover > .validation_area > .check {
+    transform: rotate(360deg);
+  } 
+
+ .content {
+    transition: all 1s;
+    display: inline-block;
+    vertical-align: top;
+    height: 80px;
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 25%;
+    padding-left: 15px;
+  }
+  .price {
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    border:none;
+    vertical-align: middle;
+    height: 80px;
+    width: 30%;
+    margin-bottom: 27px;
+  }
+  .validation_area {
+    display: inline-block;
+    vertical-align:top;
+    background-color: $tertiarycolor;
+    height: 80px;
+    width: 30%;
+  }
+  .check {
+    transition: all 1s;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: top;
+    background-color: white;
+    color: $tertiarycolor;
+    padding: 5px;
+    transform: rotate(720deg);
+    border-radius: 25px;
+    margin-top: 27px;
+    margin-left: 1vw;
+  }

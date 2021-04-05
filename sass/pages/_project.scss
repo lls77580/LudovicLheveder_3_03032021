@@ -33,15 +33,13 @@ grid-column: 1;
 grid-row: 1;
 grid-column: 1 / 4;
 display: flex;
-justify-content: center;
+justify-content: flex-start;
 font-size: 2em;
+vertical-align: top;
 }
 &_entrees{
-
 grid-column: 1;
 grid-row: 2 / 5;
-display: flex;
-flex-direction: column;
 }
 &_plat{
 grid-column: 2;
@@ -52,9 +50,40 @@ grid-row: 2 / 5;
 grid-column: 3;
 grid-row: 2 / 5;
 }
+&--header{
+display: grid;
+grid-template-columns: 80% 20%;
+grid-template-rows: auto;
+grid-row: 1;
+grid-column: 1 / 4;
+&--titre{
+grid-row: 1;
+grid-column:1;
+}
+&--favoris{
+grid-column: 2;
+grid-row: 1;
+z-index: 2;
+color: black;
+transition: all 1s ease-in-out;
+background-color: $quinarycolor;
+margin: auto;
+&--bis{
+grid-column: 2;
+grid-row: 1;
+z-index: 1;
+color: $primarycolor;
+margin: auto;
+}
+&:hover{
+opacity: 0;
+}
+}
+}
+
 }
 .mef{
 background-color: white;
-vertical-align: top;
-display: inline-block;
+border-radius: 15px;
+box-shadow: 6px 6px 6px darken($quinarycolor, 15%);
 }
