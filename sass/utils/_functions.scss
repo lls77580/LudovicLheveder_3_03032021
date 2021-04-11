@@ -3,14 +3,53 @@
     overflow: hidden;
     position: relative;
     margin: 30px;
-    height: 60px;
-    width: 18vw;
-
+    height: 67px;
+    width: 300px;
+    @media screen and (max-width:1300px ) {
+      white-space: nowrap;
+      overflow: hidden;
+      position: relative;
+      margin: 30px auto 30px auto;
+      height: 67px;
+      width: 85%;
+      @media screen and (max-width:700px ) {
+      white-space: nowrap;
+      overflow: hidden;
+      position: relative;
+      margin: 30px auto 30px auto;
+      height: 67px;
+      width: 90%;
+      }
+      @media screen and (max-width:500px ) {
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+        margin: 30px 5% 30px auto;
+        height: 67px;
+        width: 90%;
+    }
+    @media screen and (max-width:250px ) {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      position: relative;
+      margin: 10px;
+      height: 67px;
+      width: 75%; 
+      }
+}
   }
 
   .mef:hover > .content {
-    width: 50%;
+    width: 145px;
     padding-left: 15px;
+    @media screen and (max-width:1200px) {
+    width: 65%; 
+    }
+    @media screen and (max-width: 700px) {
+      width: 55%;
+      
+    }
   }
 
   .mef:hover > .validation_area > .check {
@@ -20,31 +59,51 @@
  .content {
     transition: all 1s;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     height: 80px;
-    width: 70%;
+    width: 209px;
     overflow: hidden;
     text-overflow: ellipsis;
     line-height: 25%;
     padding-left: 15px;
+    @media screen and (max-width:1200px) {
+    width: 80%;
+    height: 67px;      
+    }
+    @media screen and (max-width:700px) {
+      width: 80%;
+      height: 67px;      
+      }
+      @media screen and (max-width:500px) {
+        width: 55%;
+        height: 67px;      
+        }
+
   }
   .price {
-    display: inline-flex;
+    display: inline-block;
     text-align: center;
     justify-content: center;
     align-content: center;
     border:none;
-    vertical-align: middle;
-    height: 80px;
-    width: 30%;
-    margin-bottom: 27px;
+    vertical-align: sub;
+    height: 63px;
+    width: 20%;
   }
   .validation_area {
     display: inline-block;
     vertical-align:top;
-    background-color: $tertiarycolor;
-    height: 80px;
-    width: 30%;
+    background: $tertiarycolor;
+    height: 67px;
+    width: 59px;
+    @media screen and (max-width: 1300px) {
+    width: 20%;
+    height: 67px;
+    }
+    @media screen and (max-width: 700px) {
+    width: 20%;
+    
+    }
   }
   .check {
     transition: all 1s;
@@ -57,6 +116,42 @@
     padding: 5px;
     transform: rotate(720deg);
     border-radius: 25px;
-    margin-top: 27px;
-    margin-left: 1vw;
+    margin-top: 20px;
+    margin-left: 15px;
+    @media screen and (max-width: 1200px){
+    margin-left: 30px
+      
+    }
   }
+/**transition**/
+.mef {
+      animation: apparition 1500ms;
+  }
+
+@keyframes apparition{
+  0% {
+      transform: scaleX(0) scaleY(0);
+      opacity: .1;
+  }
+  20% {
+      transform: scaleX(.18) scaleY(.18);
+      color: white;
+      transform: translate(2);
+  }
+  24% {
+      transform: scaleX(.4) scaleY(.4);
+      color: white;
+  }
+  46% {
+      transform: scaleX(.81) scaleY(.81);
+  }
+  46% {
+    transform: scaleX(.9) scaleY(.9);
+}
+  100% {
+      opacity: 1;
+  }
+  100% {
+      transform: scaleX(1);
+  }
+}

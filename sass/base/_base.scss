@@ -1,17 +1,21 @@
 
 body{
-margin: 0 15vw 0 15vw;
-width: 70vw;
-@media screen and (max-width: 1100px) {
+width: 90vw;
+margin: auto auto 0 auto;
+@media screen and (max-width: 1300px) {
 width: 95vw;
-margin: 0 1.5vw 0 1.5vw;
+margin: auto auto 0 auto;
 }
 @media screen and (max-width: 700px) {
-margin: 0 auto 0 auto;
-width: 95vw;
-  
+margin: auto;
+width: 100vw;
+}
+@media screen and (max-width: 500px) {
+  margin: auto;
+  width: 100vw;
 }
 }
+
 a{
 text-decoration: none;
 }
@@ -19,8 +23,8 @@ text-decoration: none;
 .city{
 background: $quaternarycolor;
 padding-bottom: 20px;
-width: 70vw;
-@media screen and (max-width: 1100px) {
+width: 90vw;
+@media screen and (max-width: 1300px) {
 width: 95vw;
   
 }
@@ -49,7 +53,7 @@ width: 95vw;
     background-color: $quaternarycolor;
     text-align: center;
     }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1300px) {
 width: 95vw;
 margin: 0;
 display: flex;
@@ -90,7 +94,7 @@ display: flex;
 flex-direction: column;
 width: 90vw;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1300px) {
 
 }
 &_titre{
@@ -134,7 +138,7 @@ margin-bottom: 15px;
 height: 50px;
 border-radius: 20px;
 border: none;
-box-shadow: 2px 2px 2px darken($quaternarycolor, 30%);
+box-shadow: 8px 4px 8px darken($quaternarycolor, 30%);
 background-color: $quaternarycolor;
 position: relative;
 z-index: 1;
@@ -145,12 +149,15 @@ margin: auto;
 justify-content: center;
 align-content: center;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1300px) {
 display: flex;
 width: auto;
 }
 &:hover {
     border-radius: 20px;
+    .awesome_restaurant{
+    color: $primarycolor;
+    }
       &::after {
         border-radius: 20px;
           opacity: 1;
@@ -167,8 +174,8 @@ width: auto;
       background: $primarycolor lighten($primarycolor, 50%);
       opacity: 0;
       z-index: -1;
-      transition: opacity 250ms;
-    
+      transition: opacity cubic-bezier(.84,.45,0,1);
+
 }
 }
 
@@ -179,9 +186,9 @@ grid-template-rows: auto;
 }
 
 .number{
-width: 0.5vw;
-padding: 0.5vw;
-height: 0.5vw;
+width: 10px;
+padding: 10px;
+height: 10px;
 margin-right: 20px;
 border-radius: 100px;
 font-size: 1.5em;
@@ -200,7 +207,7 @@ justify-content: center;
 
 .awesome_restaurant{
 
-padding: 0 2vw 0 1vw;
+padding: 0 2vw 0 0.5vw;
 }
 /**Partie restaurant**/
 .selectionrestaurants
@@ -212,6 +219,7 @@ padding: 0 2vw 0 1vw;
   padding-bottom: 25px;
   background-color: $quinarycolor;
   padding: 0 2vw 4vw 5vw;
+  border-radius: 20px;
   @media screen and (max-width: 700px) 
   {
   display: flex;
@@ -222,7 +230,7 @@ padding: 0 2vw 0 1vw;
     grid-row: 1;
     grid-column: 1;
     float: left;
-    margin: none;
+    margin: 0;
     margin-left: 0;
     margin-bottom: 50px;
   }
@@ -244,10 +252,10 @@ padding: 0 2vw 0 1vw;
       height: auto;
       overflow: hidden;
       object-fit: cover;
-      padding-top: none;
+      padding-top: 0;
       align-content: center;
       justify-content: center;
-      margin-top: none;
+      margin-top: 0;
       border-top-left-radius: 15px;
       border-top-right-radius: 15px;
       @media screen and (max-width: 700px) 
@@ -281,7 +289,7 @@ padding: 0 2vw 0 1vw;
     {
       grid-column: 1;
       grid-row-start: 3;
-      text-align: flex-start;
+      text-align: left;
       align-content: flex-start;
       justify-content: flex-start;
       padding-left: 15px;
@@ -308,10 +316,12 @@ color: $primarycolor;
   }
   }
   &--favoris--bis{
-    z-index: 1;
-    background: gradient(to bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
+    z-index: 1;    
+    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+    background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   }
-}
 }
 .selectionrestaurants_choix--favoris:hover{
   opacity: 0;
@@ -349,5 +359,6 @@ flex-direction: column;
 width: 95%;
 height: max-content;
   
+}
 }
 }

@@ -2,13 +2,14 @@
 display: flex;
 align-content: center;
 justify-content: center;
+text-align: center;
 background-image: linear-gradient(to right bottom, #ff79da, #e86edb, #cf64dc, #b35cdc, #9356dc);
 height: 50px;
 border-radius: 20px;
 color: white;
 width: 218px;
 box-shadow: 2px 2px 2px darken($quinarycolor, 10%);
-font-weight:700;
+font-weight:bolder;
 margin: auto;
 @media screen and (max-width: 700px) {
 max-width: 280px; 
@@ -59,7 +60,7 @@ justify-content: space-around;
       right: 0;
       bottom: 0;
       left: 0;
-      background: lighten($primarycolor, 30%) 0%;
+      background: lighten($primarycolor,20%);
       opacity: 0;
       z-index: -1;
       transition: opacity 250ms;
