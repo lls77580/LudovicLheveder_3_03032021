@@ -138,6 +138,7 @@ margin-bottom: 15px;
 height: 50px;
 border-radius: 20px;
 border: none;
+padding-right: 30px;
 box-shadow: 8px 4px 8px darken($quaternarycolor, 30%);
 background-color: $quaternarycolor;
 position: relative;
@@ -160,7 +161,7 @@ width: auto;
     }
       &::after {
         border-radius: 20px;
-          opacity: 1;
+          opacity: 0.45;
       }
   }
 &::after {
@@ -171,10 +172,9 @@ width: auto;
       right: 0;
       bottom: 0;
       left: 0;
-      background: $primarycolor lighten($primarycolor, 50%);
-      opacity: 0;
+            opacity: 0;
       z-index: -1;
-      transition: opacity cubic-bezier(.84,.45,0,1);
+      transition: opacity 250ms;
 
 }
 }
@@ -189,7 +189,7 @@ grid-template-rows: auto;
 width: 10px;
 padding: 10px;
 height: 10px;
-margin-right: 20px;
+margin-right: 40px;
 border-radius: 100px;
 font-size: 1.5em;
 background-color: $primarycolor;
