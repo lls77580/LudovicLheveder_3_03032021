@@ -26,25 +26,16 @@ margin: auto;
 /** Bouton mode d'emploi restaurant page une**/
 }
 .btn_restaurant{
-  display: grid;
-  align-content: flex-start;
-  text-align: center;
-  justify-items: center;
-  align-items: center;
-  width: 250px;
+display: grid;
+text-align: center;
+justify-items: center;
+align-items: center;
+width: 250px;
 height: 50px;
 font-weight: 900;
-border: none;
 background: $quaternarycolor;
 box-shadow: 8px 4px 8px darken($quaternarycolor, 30%);
 border-radius: 20px;
-justify-items: center;
-align-items: center;
-margin:auto;
-display: grid;
-align-content: flex-start;
-text-align: center;
-grid-template-rows: auto;
 grid-template-columns: 50px 10% 70%;
 position: relative;
 z-index: 1;

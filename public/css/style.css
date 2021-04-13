@@ -452,7 +452,7 @@ a {
 }
 
 .btn_restaurant {
-  display: flex;
+  display: grid;
   align-content: center;
   text-align: center;
   margin-bottom: 15px;
@@ -463,7 +463,7 @@ a {
   box-shadow: 8px 4px 8px #aaaaaa;
   background-color: #f6f6f6;
   position: relative;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   z-index: 1;
 }
 @media screen and (max-width: 700px) {
@@ -711,24 +711,15 @@ a {
 
 .btn_restaurant {
   display: grid;
-  align-content: flex-start;
   text-align: center;
   justify-items: center;
   align-items: center;
   width: 250px;
   height: 50px;
   font-weight: 900;
-  border: none;
   background: #f6f6f6;
   box-shadow: 8px 4px 8px #aaaaaa;
   border-radius: 20px;
-  justify-items: center;
-  align-items: center;
-  margin: auto;
-  display: grid;
-  align-content: flex-start;
-  text-align: center;
-  grid-template-rows: auto;
   grid-template-columns: 50px 10% 70%;
   position: relative;
   z-index: 1;
@@ -1070,7 +1061,18 @@ footer {
 }
 
 .titre_menu {
-  padding-left: 30px;
+  text-transform: uppercase;
+  position: relative;
+  padding: 15px;
+}
+.titre_menu::after {
+  content: "";
+  width: 50px;
+  height: 10px;
+  background: #99E2D0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

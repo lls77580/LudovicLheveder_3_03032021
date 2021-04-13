@@ -139,7 +139,7 @@ grid-row: 4;
 }
 }
 .btn_restaurant{
-  display: flex;
+  display: grid;
   align-content: center;
   text-align: center;
   margin-bottom: 15px;
@@ -150,7 +150,7 @@ grid-row: 4;
   box-shadow: 8px 4px 8px darken($quaternarycolor, 30%);
   background-color: $quaternarycolor;
   position: relative;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   z-index: 1;
   @media screen and (max-width: 700px) {
   display: flex;
