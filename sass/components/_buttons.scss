@@ -21,38 +21,58 @@ align-content: center;
 border: none;
 margin: auto;
 }
+/** Bouton mode d'emploi restaurant page une**/
 }
 .btn_restaurant{
-width: max-content;
-text-overflow: clip;
+  display: grid;
+  align-content: flex-start;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  width: 250px;
 height: 50px;
-font-weight: bolder;
+font-weight: 900;
 border: none;
-font-size: 0.7em;
-background-color: $quaternarycolor;
+background: $quaternarycolor;
+box-shadow: 8px 4px 8px darken($quaternarycolor, 30%);
 border-radius: 20px;
 justify-items: center;
 align-items: center;
 margin:auto;
 display: grid;
+align-content: flex-start;
+text-align: center;
 grid-template-rows: auto;
-grid-template-columns: 50px 10% auto;
-@media screen and (max-width: 700px) {
-width: 85vw;
-padding-right: 4vw;
-font-size: 1em;
-display: flex;
-justify-content: space-around;
-
+grid-template-columns: 50px 10% 70%;
+position: relative;
+z-index: 1;
+@media screen and (max-width: 1000px) {
+width: 200px;
+}
+@media screen and (max-width: 900px) {
+  width: 180px;
+  grid-template-columns: 35px 5% auto;
+  }
+  @media screen and (max-width: 750px) {
+  width: 348px;
+  grid-template-columns: 50px 5% auto;
+    }
+  @media screen and (max-width: 500px) {
+  width: 250px;
+  grid-template-columns: 50px 5% auto;
+  }
+  
 &:hover {
-    border-radius: 20px;
+    color: white;
+    .awesome_restaurant{
+      color: $primarycolor;
+      }
       &::after {
         border-radius: 20px;
-          opacity: 1;
-          color: white;
+          opacity: 0.45;
+          
       }
   }
-}
 &::after {
     border-radius: 20px;
       content: "";
@@ -61,8 +81,8 @@ justify-content: space-around;
       right: 0;
       bottom: 0;
       left: 0;
-      background: lighten($primarycolor,20%);
-      opacity: 0;
+      background: lighten($primarycolor,5%);
+      opacity: 0,45;
       z-index: -1;
       transition: opacity 250ms;
   }
@@ -73,3 +93,37 @@ grid-row: 5;
 
 }
 
+.number{
+  width: 10px;
+  padding: 10px;
+  height: 10px;
+  margin-right: 40px;
+  border-radius: 100px;
+  font-size: 10px;
+  background-color: $primarycolor;
+  grid-column: 1;
+  @media screen and (max-width: 700px) {
+  width: 10px;
+  padding: 10px;
+  height: 10px;
+  font-size: 5px;
+  display: flex;
+  text-align: center;
+  align-content: center;
+  justify-content: center;   
+  }
+  @media screen and (max-width: 500px) {
+    width: 8px;
+    padding: 8px;
+    height: 8px;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: center;   
+  }
+  }
+  
+  .awesome_restaurant{
+  
+  padding: 0 2vw 0 0.5vw;
+  }
