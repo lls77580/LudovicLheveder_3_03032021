@@ -221,6 +221,7 @@ grid-row: 4;
     grid-template-rows: 75% 1rem 1rem 1rem;
     width: 100%;
     height: 252px;
+    position: relative;
     &--picture
     {
       display: grid;
@@ -338,7 +339,18 @@ display: flex;
 flex-direction: column;
 width: 95%;
 height: max-content;
-  
 }
 }
 }
+.restaurant_nouveau{
+  position: absolute;
+  right: 10px;
+  top: 3px;
+  background:$tertiarycolor;
+  z-index: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: black;
+  text-transform: uppercase;
+  border-radius: 5px;
+  }
