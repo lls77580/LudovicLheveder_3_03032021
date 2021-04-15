@@ -4,6 +4,7 @@
        height: 67px;
        margin: 50px auto 50px auto;
     width: 290px;
+    padding: 0;
     @media screen and (max-width:1200px ) {
       white-space: nowrap;
       overflow: hidden;
@@ -46,12 +47,21 @@
         width: 90%; 
         margin: 10px auto 30px auto;
         }
+  }
 
+  .mef > .price > .content{
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   }
 
   .mef:hover > .content {
     width: 165px;
     padding-left: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     @media screen and (max-width:1200px) {
     width: 650px; 
     }
@@ -82,7 +92,7 @@
     width: 215px;
     overflow: hidden;
     text-overflow: ellipsis;
-    line-height: 25%;
+    padding-bottom: 0;
     padding-left: 15px;
     @media screen and (max-width:1200px) {
     width: 728px;
@@ -229,4 +239,10 @@
   100% {
       transform: scaleX(1);
   }
+}
+.contenu{
+display: flex;
+align-content: center;
+padding-top: 0;
+
 }
