@@ -1,27 +1,27 @@
 .mef {
     white-space: nowrap;
     overflow: hidden;
-       height: 67px;
-       margin: 50px auto 50px auto;
+    height: 67px;
+    margin: 50px auto 50px auto;
     width: 290px;
     padding: 0;
-    @media screen and (max-width:1200px ) {
-      white-space: nowrap;
-      overflow: hidden;
-      position: relative;
-      margin: 30px auto 30px auto;
-      height: 67px;
-      width: 800px;
-      }
-      @media screen and (max-width:1000px ) {
-      white-space: nowrap;
-      overflow: hidden;
-      position: relative;
-      margin: 30px auto 30px auto;
-      height: 67px;
-      width: 600px;
-      }
-      @media screen and (max-width:800px ) {
+    @media screen and (max-width: 1200px) {
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+        margin: 30px auto 30px auto;
+        height: 67px;
+        width: 800px;
+    }
+    @media screen and (max-width:1000px) {
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+        margin: 30px auto 30px auto;
+        height: 67px;
+        width: 600px;
+    }
+    @media screen and (max-width:800px) {
         white-space: nowrap;
         overflow: hidden;
         position: relative;
@@ -29,62 +29,61 @@
         height: 67px;
         width: 500px;
     }
-    @media screen and (max-width:600px ) {
-      white-space: nowrap;
-      overflow: hidden;
-      position: relative;
-      margin: 10px;
-      height: 67px;
-      width: 348px; 
-      margin: 30px auto 30px auto;
-      }
-      @media screen and (max-width:400px ) {
+    @media screen and (max-width:600px) {
         white-space: nowrap;
         overflow: hidden;
         position: relative;
         margin: 10px;
         height: 67px;
-        width: 90%; 
+        width: 348px;
+        margin: 30px auto 30px auto;
+    }
+    @media screen and (max-width:400px) {
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+        margin: 10px;
+        height: 67px;
+        width: 90%;
         margin: 10px auto 30px auto;
-        }
-  }
+    }
+}
 
-  .mef > .price > .content{
-  position: relative;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  }
+.mef>.price>.content {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
 
-  .mef:hover > .content {
+.mef:hover>.content {
     width: 165px;
     padding-left: 15px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    @media screen and (max-width:1200px) {
-    width: 650px; 
+    @media screen and (max-width: 1200px) {
+        width: 650px;
     }
     @media screen and (max-width:1000px) {
-    width: 300px; 
+        width: 300px;
     }
     @media screen and (max-width: 800px) {
-      width: 255px;
+        width: 255px;
     }
     @media screen and (max-width: 600px) {
-      width: 205px;
+        width: 205px;
     }
     @media screen and (max-width: 400px) {
-      width: 60%;
-      
+        width: 60%;
     }
-  }
+}
 
-  .mef:hover > .validation_area > .check {
+.mef:hover>.validation_area>.check {
     transform: rotate(360deg);
-  } 
+}
 
- .content {
+.content {
     transition: all 1s;
     display: inline-block;
     vertical-align: middle;
@@ -94,89 +93,89 @@
     text-overflow: ellipsis;
     padding-bottom: 0;
     padding-left: 15px;
-    @media screen and (max-width:1200px) {
-    width: 728px;
-    height: 67px;      
+    padding-top: 15px;
+    @media screen and (max-width: 1200px) {
+        width: 728px;
+        height: 67px;
     }
     @media screen and (max-width:1000px) {
-    width: 400px;
-    height: 67px;      
-      }
-
+        width: 400px;
+        height: 67px;
+    }
     @media screen and (max-width:800px) {
-      width: 350px;
-      height: 67px;      
-      }
-      @media screen and (max-width:600px) {
+        width: 350px;
+        height: 67px;
+    }
+    @media screen and (max-width:600px) {
         width: 272px;
-        height: 67px;      
-        }
-      @media screen and (max-width:400px) {
+        height: 67px;
+    }
+    @media screen and (max-width:400px) {
         width: 73%;
-        }
-      
+    }
+}
 
-  }
-  .price {
+.price {
     display: inline-block;
     text-align: right;
-    border:none;
-    vertical-align: sub;
+    border: none;
+    vertical-align: top;
+    padding-top: 15px;
     height: 63px;
     width: 50px;
-    @media screen and (max-width:1000px) {
-      width: 177px;
-      height: 67px;      
-        }
-  
+    @media screen and (max-width: 1000px) {
+        width: 177px;
+        height: 67px;
+    }
     @media screen and (max-width:800px) {
         width: 127px;
-        height: 67px;      
-        }
-      @media screen and (max-width:600px) {
-          width: 56px;
-          height: 67px;      
-          }
-          @media screen and (max-width:400px) {
-            width: 20%;
-            height: 67px;      
-            } 
-  
-  }
-  .validation_area {
+        height: 67px;
+    }
+    @media screen and (max-width:600px) {
+        width: 56px;
+        height: 67px;
+    }
+    @media screen and (max-width:400px) {
+        width: 20%;
+        height: 67px;
+    }
+}
+
+.validation_area {
     display: inline-block;
-    vertical-align:top;
+    vertical-align: top;
     background: $tertiarycolor;
     height: 67px;
     width: 59px;
     @media screen and (max-width: 1300px) {
-    width: 20%;
-    height: 67px;
-    }
-    @media screen and (max-width: 1200px) {
-      width: 100px;
-      height: 67px;
-      }
-      @media screen and (max-width: 1000px) {
         width: 20%;
         height: 67px;
-        }
-        @media screen and (max-width: 1000px) {
-          width: 20%;
-          height: 67px;
-          }
-          @media screen and (max-width: 800px) {
-            width: 20%;
-            height: 67px;
-            }
+    }
+    @media screen and (max-width: 1200px) {
+        width: 100px;
+        height: 67px;
+    }
+    @media screen and (max-width: 1000px) {
+        width: 20%;
+        height: 67px;
+    }
+    @media screen and (max-width: 1000px) {
+        width: 20%;
+        height: 67px;
+    }
+    @media screen and (max-width: 800px) {
+        width: 20%;
+        height: 67px;
+    }
     @media screen and (max-width: 600px) {
-    width: 80px;
+        width: 80px;
     }
     @media screen and (max-width: 400px) {
-      width: 20%;
-      }
-  }
-  .check {
+        width: 20%;
+    }
+}
+
+.check {
     transition: all 1s;
     align-content: center;
     justify-content: center;
@@ -189,60 +188,65 @@
     border-radius: 25px;
     margin-top: 20px;
     margin-left: 15px;
-    @media screen and (max-width: 1200px){
-    margin-left: 25px;
+    @media screen and (max-width: 1200px) {
+        margin-left: 25px;
     }
-    @media screen and (max-width: 1000px){
-    margin-left: 40px;
+    @media screen and (max-width: 1000px) {
+        margin-left: 40px;
     }
-    @media screen and (max-width: 800px){
-    margin-left: 40px;
+    @media screen and (max-width: 800px) {
+        margin-left: 40px;
     }
-    @media screen and (max-width: 600px){
-    margin-left: 20px;
+    @media screen and (max-width: 600px) {
+        margin-left: 20px;
     }
-    @media screen and (max-width: 400px){
-    margin-left: 10px;
+    @media screen and (max-width: 400px) {
+        margin-left: 10px;
     }
-    @media screen and (max-width: 300px){
-    margin-left: 12px;
+    @media screen and (max-width: 300px) {
+        margin-left: 12px;
     }
+}
 
-  }
+
 /**transition**/
+
 .mef {
-      animation: apparition 1500ms;
-  }
-
-@keyframes apparition{
-  0% {
-      transform: scaleX(0) scaleY(0);
-      opacity: .1;
-  }
-  20% {
-      transform: scaleX(.18) scaleY(.18);
-      color: white;
-  }
-  24% {
-      transform: scaleX(.4) scaleY(.4);
-      color: white;
-  }
-  46% {
-      transform: scaleX(.81) scaleY(.81);
-  }
-  46% {
-    transform: scaleX(.9) scaleY(.9);
+    animation: apparition 1500ms;
 }
-  100% {
-      opacity: 1;
-  }
-  100% {
-      transform: scaleX(1);
-  }
-}
-.contenu{
-display: flex;
-align-content: center;
-padding-top: 0;
 
+@keyframes apparition {
+    0% {
+        transform: scaleX(0) scaleY(0);
+        opacity: .1;
+    }
+    20% {
+        transform: scaleX(.18) scaleY(.18);
+        color: white;
+    }
+    24% {
+        transform: scaleX(.4) scaleY(.4);
+        color: white;
+    }
+    46% {
+        transform: scaleX(.81) scaleY(.81);
+    }
+    46% {
+        transform: scaleX(.9) scaleY(.9);
+    }
+    100% {
+        opacity: 1;
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.entree,
+.plat,
+.dessert {
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    margin-top: 0;
+    margin-bottom: 0;
 }

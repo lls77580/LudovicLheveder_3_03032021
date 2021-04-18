@@ -1,23 +1,41 @@
-.texte{
-font-family: "roboto";
-color: black;
-font-size-adjust: inherit;
-text-overflow: ellipsis;
-
-}
-.title{
-font-weight: bolder;
-font-family: "roboto";
-color: black;
-font-size-adjust: inherit;
-text-overflow: ellipsis;
-}
-.number{
-font-family: "roboto";
-font-size: 1em;
-color: white;
-}
-a{
-text-decoration: none;
-color: white;
-}
+    .texte {
+        font-family: "roboto";
+        color: black;
+        font-size-adjust: inherit;
+        text-overflow: ellipsis;
+    }
+    
+    .title {
+        font-weight: bolder;
+        font-family: "roboto";
+        color: black;
+        font-size-adjust: inherit;
+        text-overflow: ellipsis;
+    }
+    
+    .number {
+        font-family: "roboto";
+        font-size: 1em;
+        color: white;
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .menu_restaurant--header--titre {
+        font-family: 'Shrikhand';
+        font-weight: lighter;
+        font-size: 2em;
+        font-size-adjust: inherit;
+    }
+    
+    .contenu {
+        &_entree,
+        &_plat,
+        &_dessert {
+            font-weight: lighter;
+            font-size: smaller;
+        }
+    }
